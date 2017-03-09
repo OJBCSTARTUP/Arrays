@@ -16,14 +16,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    NSArray *arr = [NSArray arrayWithObjects:@"Ma", @"Na", @"Vey", @"Borey", nil];
+    NSLog(@"Array: %@",arr.debugDescription);
+    NSString *str = [arr objectAtIndex:2];
+    NSLog(@"Array: %@",str.debugDescription);
+    NSMutableArray *mut = [NSMutableArray arrayWithObjects:@"Pat", @"Nem", @"Own", @"Sothy",@"Tong",@"Sothea",nil];
+      NSLog(@"Array: %@",mut.debugDescription);
+    [mut removeObjectAtIndex:4];
+     NSLog(@"Array: %@",mut.debugDescription);
+    [mut addObject:@"Uknow"];
+     NSLog(@"Array: %@",mut.debugDescription);
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 
 @end
